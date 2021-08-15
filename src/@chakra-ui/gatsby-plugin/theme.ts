@@ -2,8 +2,11 @@ import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
   fonts: {
-    heading: "Inter",
-    body: "Inter",
+    heading: "Dm Sans",
+    body: "Dm sans",
+  },
+  colors: {
+    header: "#292929",
   },
 });
 

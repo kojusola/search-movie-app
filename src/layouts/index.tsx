@@ -2,9 +2,9 @@ import React from "react";
 import * as Chakra from "@chakra-ui/react";
 import { PageProps } from "gatsby";
 import FadeTransition from "../components/transitions/fade-transition";
-import Header from "../components/header";
-import Footer from "../components/footer";
 import "keen-slider/keen-slider.min.css";
+
+import { Header } from "../components/head";
 
 const Layout = ({ children, location }: PageProps): React.ReactElement => {
   global.baseUrl = "/.netlify/functions/base";
@@ -16,7 +16,6 @@ const Layout = ({ children, location }: PageProps): React.ReactElement => {
         <FadeTransition shouldChange={location.pathname}>
           {children}
         </FadeTransition>
-        <Footer />
       </Chakra.Flex>
     </>
   );
